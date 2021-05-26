@@ -39,8 +39,8 @@ router.put("/:id", (req, res) => {
     where: {
       id: req.params.id,
     }
-    .then((category) => res.json(category))
-    .catch((err) => res.json(err));
+      .then((category) => res.json(category))
+      .catch((err) => res.json(err)),
   });
 });
 
@@ -50,8 +50,8 @@ router.delete("/:id", (req, res) => {
     where: {
       id: req.params.id,
     }
-    .then((category) => res.json(category))
-    .catch((err) => res.json(err));
+      .then((category) => res.json(category))
+      .catch((err) => res.json(err)),
   });
 });
 
